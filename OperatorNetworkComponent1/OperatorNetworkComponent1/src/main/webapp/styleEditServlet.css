@@ -1,0 +1,92 @@
+@charset "ISO-8859-1";
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Container styles */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #f8f9fa; /* Light Gray */
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+ 
+/* Heading styles */
+.heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+ 
+/* Form styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+ 
+td {
+    padding: 12px;
+    vertical-align: middle;
+}
+ 
+input[type="text"], select {
+    width: calc(100% - 24px);
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ced4da; /* Light Gray */
+    font-size: 16px;
+    background-color: #f8f9fa; /* Light Gray */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+ 
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='6' viewBox='0 0 12 6'%3E%3Cpath fill='%23999' d='M6 6L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 15px);
+    background-position-y: center;
+}
+ 
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff; /* Primary Blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+ 
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker Blue */
+}
+ 
+/* Form input placeholders */
+input[type="text"]::placeholder, select::placeholder {
+    color: #999; /* Gray */
+}
+ 
+/* Form input focus styles */
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #007bff; /* Primary Blue */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Primary Blue Shadow */
+}
